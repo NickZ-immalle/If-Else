@@ -64,21 +64,14 @@ namespace Code
             DateTime verjaardag = new DateTime(2018, 9, 11);
             DateTime geboorte = new DateTime(2001, 9, 11);
             TimeSpan leeftijd;
+            leeftijd = verjaardag - geboorte;
+            Label2.Content = leeftijd;
+        }
+        
 
-            while (verjaardag.Year <= 2117)
-            {
-                if (verjaardag.DayOfWeek == DayOfWeek.Wednesday)
-                {
-                    leeftijd = verjaardag - geboorte;
-                    Label2.Content = leeftijd;
-                    verjaardag = verjaardag.AddYears(1);
-
-                }
-                else
-                {
-                    verjaardag = verjaardag.AddYears(1);
-                }
-            }
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            Label3.Background = new SolidColorBrush(Colors.GhostWhite);
         }
     }
 }

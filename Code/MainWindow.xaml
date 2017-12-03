@@ -18,11 +18,15 @@
 
         <Label Name="Label2" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,94,0,0" Height="44" Width="574" Background="Black" Foreground="White"/>
 
-        <Button Content="Birthday days until 2018" HorizontalAlignment="Left" VerticalAlignment="Top" Width="163" Margin="263,138,0,0" Height="44" Background="Black" Foreground="White" Click="Button_Click_1"/>
+        <Button Content="Hoeveel dagen leef ik al ?" HorizontalAlignment="Left" VerticalAlignment="Top" Width="163" Margin="263,138,0,0" Height="44" Background="Black" Foreground="White" Click="Button_Click_1"/>
 
         <TextBox Name="TextBox2" HorizontalAlignment="Left" Height="33" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="352" Margin="210,222,0,0" Background="Black" Foreground="White" />
 
         <Label Content="Geef een getal tussen 1 en 3" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,227,0,0" Width="200" Background="Black" Foreground="White" />
+
+        <Label Name="Label3" Content="" HorizontalAlignment="Left" Height="55" Margin="40,282,0,0" VerticalAlignment="Top" Width="204" Background="Black"/>
+        
+        <Button Content="Change color" HorizontalAlignment="Left" VerticalAlignment="Top" Width="145" Margin="281,282,0,0" Height="38" Background="Black" Foreground="White" Click="Button_Click_2" />
 
     </Grid>
 </Window>
