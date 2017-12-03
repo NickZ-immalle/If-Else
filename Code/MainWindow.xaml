@@ -7,12 +7,22 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="400" Width="600">
     <Grid>
-        <TextBox Name="TextBox" HorizontalAlignment="Left" Height="89" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="145" Margin="10,138,0,0" Background="Black" Foreground="White"/>
+        <TextBox Name="TextBox" HorizontalAlignment="Left" Height="89" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="140" Margin="10,138,0,0" Background="Black" Foreground="White"/>
 
-        <Label Name="Label" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="155,138,0,0" RenderTransformOrigin="0.5,0.5" Width="113" Background="Black" Foreground="White" Height="44">
+        <Label Name="Label" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="150,138,0,0" RenderTransformOrigin="0.5,0.5" Width="113" Background="Black" Foreground="White" Height="44">
         </Label>
 
-        <Button Name="Button" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="113" Margin="155,187,0,0" Background="Black" Height="40" Click="Button_Click" Foreground="White"/>
+        <Button Name="Button" Content="password" HorizontalAlignment="Left" VerticalAlignment="Top" Width="113" Margin="150,182,0,0" Background="Black" Height="44" Click="Button_Click" Foreground="White" RenderTransformOrigin="0.167,0.554"/>
+
+        <Button Name="Button2" Content="click" HorizontalAlignment="Left" VerticalAlignment="Top" Width="163" Margin="263,182,0,0" Height="45" Background="Black" Foreground="White" Click="Button2_Click"/>
+
+        <Label Name="Label2" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,94,0,0" Height="44" Width="574" Background="Black" Foreground="White"/>
+
+        <Button Content="Birthday days until 2018" HorizontalAlignment="Left" VerticalAlignment="Top" Width="163" Margin="263,138,0,0" Height="44" Background="Black" Foreground="White" Click="Button_Click_1"/>
+
+        <TextBox Name="TextBox2" HorizontalAlignment="Left" Height="33" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="352" Margin="210,222,0,0" Background="Black" Foreground="White" />
+
+        <Label Content="Geef een getal tussen 1 en 3" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,227,0,0" Width="200" Background="Black" Foreground="White" />
 
     </Grid>
 </Window>

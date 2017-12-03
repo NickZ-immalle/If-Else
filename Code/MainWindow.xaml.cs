@@ -20,6 +20,7 @@ namespace Code
     /// </summary>
     public partial class MainWindow : Window
     {
+     
         public MainWindow()
         {
             InitializeComponent();
@@ -38,6 +39,45 @@ namespace Code
             else
             {
                 Label.Content = "Wrong";
+            }
+        }
+
+        private void Button2_Click(object sender, RoutedEventArgs e)
+        {
+            int nog = Convert.ToInt32(TextBox2.Text);
+            switch (nog)
+            {
+                case 1:
+                    Button2.Content = "Je getal was 1";
+                    break;
+                case 2:
+                    Button2.Content = "Je getal was 2";
+                    break;
+                default:
+                    Button2.Content = "je getal was 3";
+                    break;
+            }
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            DateTime verjaardag = new DateTime(2018, 9, 11);
+            DateTime geboorte = new DateTime(2001, 9, 11);
+            TimeSpan leeftijd;
+
+            while (verjaardag.Year <= 2117)
+            {
+                if (verjaardag.DayOfWeek == DayOfWeek.Wednesday)
+                {
+                    leeftijd = verjaardag - geboorte;
+                    Label2.Content = leeftijd;
+                    verjaardag = verjaardag.AddYears(1);
+
+                }
+                else
+                {
+                    verjaardag = verjaardag.AddYears(1);
+                }
             }
         }
     }
