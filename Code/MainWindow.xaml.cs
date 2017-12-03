@@ -71,7 +71,17 @@ namespace Code
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            Label3.Background = new SolidColorBrush(Colors.GhostWhite);
+            if(TextBox.Text == "password")
+            {
+                Label3.Foreground = new SolidColorBrush(Colors.Salmon);
+                Label3.Background = new SolidColorBrush(Colors.Salmon);
+
+            }
+            else
+            {
+                Label3.Foreground = new SolidColorBrush(Colors.Brown);
+                Label3.Content = "Je moet eerst het wachtwoord raden !";
+            }
         }
     }
 }
