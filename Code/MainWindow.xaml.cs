@@ -24,5 +24,21 @@ namespace Code
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            string password;
+            Label.Content = "";
+            password = TextBox.Text;
+
+            if (password == "password")
+            {
+                Label.Content = "Correct";
+            }
+            else
+            {
+                Label.Content = "Wrong";
+            }
+        }
     }
 }
